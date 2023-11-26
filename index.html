@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa Aula 2 - Curso Greenn</title>
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            /* background-image: url('https://images.pexels.com/photos/3970396/pexels-photo-3970396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+            /* background-image: url('https://images.pexels.com/photos/4826567/pexels-photo-4826567.png'); */
+            /* background: rgb(223,250,255);
+            background: linear-gradient(90deg, rgba(223,250,255,1) 0%, rgba(170,233,246,1) 100%); */
+            height: 100%;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(70, 70, 70);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .regras {
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgb(36, 17, 146);
+            padding: 10px;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .borda {
+            border: 20px solid #ffffff00;
+        }
+
+        .fundo {
+            background-color: #d3d1d191;
+        }
+
+        .forms {
+            display: flex;
+        }
+
+        .direita {
+            align-self: flex-end;
+            float: right;
+        }
+
+        button {
+            border-radius: 20px;
+            color: white;
+            background-color: darkblue;
+            height: 50px;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:hover {
+            background-color: rgb(8, 82, 20);
+            border-radius: 100px;
+            transform: rotate(360deg);
+            margin: auto !important;
+            transition: transform 0.3s;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #494949;
+        }
+
+        p,
+        label {
+            font-size: 20px;
+        }
+
+        p {
+            text-align: justify;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .ol {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+        }
+
+        input {
+            border-radius: 5px;
+            height: 20px;
+            margin: 2px;
+        }
+
+        .beet {
+            border: 2px solid rgb(46, 46, 46);
+        }
+
+        tr,
+        td {
+            background-color: lightblue;
+            color: lightblue;
+            font-size: 25px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-decoration: underline;
+            color: black;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        h4 {
+            font-size: 40px;
+        }
+
+        h5 {
+            font-weight: 900px;
+            font-size: 22px;
+        }
+
+        h6 {
+            font-size: 25px;
+            float: right;
+            color: darkred;
+        }
+
+        h6:hover {
+            color: green;
+        }
+
+        @media (max-width: 800px) {
+
+            body {
+                margin: auto;
+                width: auto;
+            }
+
+            div,
+            img,
+            form,
+            table,
+            .fundo,
+            .beet,
+            .forms,
+            tr,
+            td {
+                width: 70%;
+                display: block;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <h1 class="centro">Tarefa para <em>casa</em></h1>
+    <div>
+        <div style="float: left;">
+            <img src="https://images.pexels.com/photos/511313/pexels-photo-511313.jpeg" alt="Homem idoso">
+        </div>
+        <div>
+            <h2>Valter M. Júnior</h2>
+            <h3><u>Data da aula: 17/11/2023</u></h3>
+        </div>
+    </div>
+    <div class="centro">
+        <br>
+        <br>
+        <p class="centro"><em>É de grande importância a sua ajuda e o seu entusiasmo.</em></p>
+        <p class="centro"><strong>Afilie-se</strong></p>
+        <a class="regras" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Regras, clique aqui
+        </a>
+    </div>
+    <div class="forms">
+        <div class="fundo"> <!--Primeira coluna-->
+            <form action="index.html">
+                <div>
+                    <h5>Dados pessoais</h5>
+                    <input class="direita" id="nome" placeholder="Nome" type="text" id="nome">
+                    <br>
+                    <input class="direita" id="idade" type="number" placeholder="Idade" id="idade">
+                    <br>
+                    <input class="direita" id="email" type="email" placeholder="E-mail" id="email">
+                    <br>
+                    <input class="direita" id="cartao" type="text" placeholder="Número do cartão" id="email">
+                    <br>
+                </div>
+                <br>
+                <h5>Confirma as informações?</h5>
+                <input type="radio">
+                <label>Sim, confirmo</label>
+                <br>
+                <input type="radio" disabled>
+                <label>Não, não confirmo</label>
+                <div class="centro">
+                    <button onclick="alert('Enviado! hehe')" type="submit" value="submit">Confirmar</button>
+                </div>
+            </form>
+        </div>
+        <div style="width: 1000px;" class="fundo"><!--Segunda coluna-->
+            <div>
+                <h5>Listagem de tarefas</h5>
+                <ol>
+                    <li class="ol">Tags de estruturação
+                        <ul>
+                            <li>
+                                Atendida
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ol">Título
+                        <ul>
+                            <li>
+                                Atendido
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ol">Tags de Cabeçalhos
+                        <ul>
+                            <li>Atendidas</li>
+                        </ul>
+                    </li>
+                    <li class="ol">Parágrafo
+                        <ul>
+                            <li>Ao lado</li>
+                        </ul>
+                    </li>
+                    <li class="ol">Listas ordenadas e não ordenadas
+                        <ul>
+                            <li>
+                                Ela aqui
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ol">Imagem (src e alt)
+                        <ul>
+                            <li>
+                                Atendida
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ol">Formulário</li>
+                    <ul>
+                        <li>
+                            Meio certo
+                        </li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+        <div class="beet"> <!--Terceira coluna-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Beethoven_%28cropped_2%29.jpg/250px-Beethoven_%28cropped_2%29.jpg"
+                alt="Beethoven">
+            <p><strong><span style="font-size: 30px; font-family: 'Yellowtail', cursive;">L</span>udwig van
+                    Beethoven</strong> (Bonn, batizado em 17 de
+                dezembro de 1770 – Viena, 26 de março de 1827)
+                foi um compositor germânico do período de transição entre o classicismo
+                e o romantismo. É considerado um dos pilares da música ocidental,
+                pelo incontestável desenvolvimento, tanto da linguagem como do
+                conteúdo musical demonstrado nas suas obras, permanecendo como
+                um dos compositores mais respeitados e mais influentes de todos
+                os tempos. "O resumo de sua obra é a liberdade", observou o crítico
+                alemão Paul Bekker (1882–1937), "a liberdade política, a liberdade
+                artística do indivíduo, sua liberdade de escolha, de credo e a
+                liberdade individual em todos os aspectos da vida".</p>
+
+            <h4 class="centro fundo">Composições de destaque</h4>
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=UUQIIw_JXhY" target="_blank">Sinfonia nº 5</a>
+                        </td>
+                        <td>
+                            <a href="https://youtu.be/rOjHhS5MtvA?si=TT05BRhPbAR1t4mR&t=115" target="_blank">Sinfonia nº
+                                9</a>
+                        </td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=4Tr0otuiQuU" target="_blank">Sonata para piano nº
+                                14</a>
+                        </td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=q9bU12gXUyM" target="_blank">Für Elise</a>
+                        </td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=7MqrBauptrE" target="_blank">Sinfonia nº 7</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="float: right;">Fonte: <a href="https://pt.wikipedia.org/wiki/Ludwig_van_Beethoven">Wikipedia</a>
+            </p>
+        </div>
+    </div>
+
+    <h6 class="center" onClick="alert('Clicou né')">Não clique</h6>
+</body>
+
+</html>
+
+<!--
+    Tarefa: Construção de uma Página Web Básica
+Criar uma página web simples usando HTML para demonstrar o conhecimento adquirido até agora.
+
+Instruções:
+
+Crie um documento HTML:
+a. Use as tags <html>, <head> e <body> para estruturar a página. 
+b. Inclua um título para a página dentro da tag <title> no <head>. 
+
+Estrutura do Conteúdo:
+a. Utilize as tags de cabeçalho <h1>, <h2>, <h3>, etc., para criar títulos diferentes 
+    na página.
+b. Insira parágrafos <p> para criar alguns blocos de texto informativo.
+c. Inclua uma lista ordenada <ol> e uma lista não ordenada <ul> com alguns itens.
+
+Incorporar Imagens:
+a. Adicione pelo menos uma imagem usando a tag <img>. Certifique-se de incluir o atributo 
+src para indicar o caminho da imagem e o atributo alt com uma descrição da imagem.
+
+Links:
+a. Insira pelo menos um link <a> para uma página web externa ou uma página inexistente local,
+     usando o atributo href.
+
+Formulário Simples:
+a. Crie um formulário simples utilizando as tags <form>, <input>, <label>, etc.
+     Inclua campos como nome, e-mail e um botão de envio.
+-->

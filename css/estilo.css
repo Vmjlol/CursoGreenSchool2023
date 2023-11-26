@@ -1,0 +1,165 @@
+body {
+    /* background-image: url('https://images.pexels.com/photos/3970396/pexels-photo-3970396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    /* background-image: url('https://images.pexels.com/photos/4826567/pexels-photo-4826567.png'); */
+    /* background: rgb(223,250,255);
+    background: linear-gradient(90deg, rgba(223,250,255,1) 0%, rgba(170,233,246,1) 100%); */
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(70, 70, 70);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.regras {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(36, 17, 146);
+    padding: 10px;
+}
+
+.centro {
+    text-align: center;
+}
+
+.borda {
+    border: 20px solid #ffffff00;
+}
+
+.fundo {
+    background-color: #d3d1d191;
+}
+
+.forms {
+    display: flex;
+}
+
+.direita {
+    align-self: flex-end;
+    float: right;
+}
+
+button {
+    border-radius: 20px;
+    color: white;
+    background-color: darkblue;
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: rgb(8, 82, 20);
+    border-radius: 100px;
+    transform: rotate(360deg);
+    margin: auto !important;
+    transition: transform 0.3s;
+}
+
+div {
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #494949;
+}
+
+p,
+label {
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+.ol {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+li {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+input {
+    border-radius: 5px;
+    height: 20px;
+    margin: 2px;
+}
+
+.beet {
+    border: 2px solid rgb(46, 46, 46);
+}
+
+tr,
+td {
+    background-color: lightblue;
+    color: lightblue;
+    font-size: 25px;
+}
+
+table {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-weight: 900px;
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 25px;
+    float: right;
+    color: darkred;
+}
+
+h6:hover {
+    color: green;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        margin: auto;
+        width: auto;
+    }
+    div, img, form, table, .fundo, .beet, .forms, tr, td {
+        width:70%;
+        display: block;
+    }
+}
